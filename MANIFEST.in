@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include widget_party/static *
+recursive-include widget_party/templates *
