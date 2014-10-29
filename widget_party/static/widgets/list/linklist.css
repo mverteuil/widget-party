@@ -1,0 +1,44 @@
+.widget-linklist>div { 
+    background-color: #12b0c5;
+}
+
+.widget-linklist .title { 
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-linklist ol, ul {
+    margin: 0 15px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-linklist ol {
+    list-style-position: inside;
+}
+
+.widget-linklist li {
+    margin-bottom: 5px;
+}
+
+.widget-linklist .linklist-nostyle {
+    list-style: none;
+}
+
+.widget-linklist .label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-linklist .value {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $value-color;
+}
+
+.widget-linklist .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.widget-linklist .more-info {
+    color: rgba(255, 255, 255, 0.7);
+}

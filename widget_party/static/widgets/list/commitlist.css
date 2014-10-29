@@ -1,0 +1,49 @@
+.widget-commitlist>div { 
+    background-color: #12b0c5;
+}
+
+.widget-commitlist .title { 
+    f
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-commitlist ol, ul {
+    margin: 0 15px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-commitlist ol {
+    list-style-position: inside;
+}
+
+.widget-commitlist li {
+    font-size: 12px;
+    border-top: 1px solid #00AAAA;
+    padding-top: 6px;
+    margin-bottom: 6px;
+}
+
+.widget-commitlist .commitlist-nostyle {
+    list-style: none;
+}
+
+.widget-commitlist .author {
+    float: right;
+    color: rgba(0, 255, 255, 0.3);
+    font-weight: 600;
+}
+
+.widget-commitlist a .sha {
+    float: left;
+    text-transform: uppercase;
+    color: rgba(0, 255, 255, 0.7);
+}
+
+.widget-commitlist .message {
+    padding-top:2px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
