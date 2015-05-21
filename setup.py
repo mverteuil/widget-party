@@ -9,10 +9,10 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='widget-party',
-    version='1.2',
+    version='1.3',
     packages=['widget_party'],
     include_package_data=True,
-    install_requires=['django-dashing>=0.1.2', 'Django>=1.6', ],
+    install_requires=['django-dashing>=0.2.6', 'Django>=1.6', ],
     license='MIT License',  # example license
     description='A collection of widgets to add functionality to django-dashing.',
     long_description=README,
