@@ -1,0 +1,25 @@
+.widget-fatnumber {
+    background-color: #96bf48;
+}
+
+.widget-fatnumber h1 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-fatnumber h2 {
+    color: #fff;
+}
+
+.widget-fatnumber .detail {
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+}
+
+.widget-fatnumber .more-info {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.widget-fatnumber .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+}
