@@ -1,15 +1,11 @@
-<li class="widget widget-list widget-fatlist">
-    <table class="fatlist-table">
-        <thead class="fatlist-head">
-            <tr>
-                <th class="title" colspan="2"></th>
-            </tr>
-        </thead>
-        <tbody class="fatlist-body">
-        <tr class="row">
-            <td class="label"></td>
-            <td class="value"></td>
-        </tr>
-        </tbody>
-    </table>
-</li>
+<div>
+    <h1>{ title }</h1>
+    <ul>
+      <li rv-each-item="data">
+        <span class="label">{ item.label }</span>
+        <span class="value">{ item.value }</span>
+      </li>
+    </ul>
+    <p class="more-info" rv-if="moreInfo">{ moreInfo }</p>
+    <p class="updated-at" rv-if="updatedAt">{ updatedAt }</p>
+</div>
