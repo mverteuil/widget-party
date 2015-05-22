@@ -12,7 +12,7 @@ Dashing.widgets.BuildStatus = function(dashboard) {
     self.interval = 1000;
 };
 
-rivets.binders.build_status = function(el, value) {
+rivets.binders.buildstatus = function(el, value) {
     console.log(value);
     var state_colors = {
         failure: '#C1042C',
