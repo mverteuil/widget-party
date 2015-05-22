@@ -1,4 +1,5 @@
-/*global Dashboard, $*/
+/* global Dashing */
+
 Dashing.widgets.BuildStatus = function(dashboard) {
     var self = this, widget;
     self.__init__ = Dashing.utils.widgetInit(dashboard, 'buildstatus');
