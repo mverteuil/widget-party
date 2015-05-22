@@ -13,6 +13,7 @@ Dashing.widgets.BuildStatus = function(dashboard) {
 };
 
 rivets.binders.build_status = function(el, value) {
+    console.log(value);
     var state_colors = {
         failure: '#C1042C',
         progress: '#460027',
