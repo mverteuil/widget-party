@@ -6,10 +6,7 @@ class BuildStatusWidget(Widget):
     title = ''
     updated_at = ''
     buildnumber = 0
-    status = 0
-
-    def is_building(self):
-        return False
+    status = 'progress'
 
     def get_title(self):
         return self.title
@@ -18,10 +15,7 @@ class BuildStatusWidget(Widget):
         return self.updated_at
 
     def get_buildnumber(self):
-        if self.is_building:
-            return "..."
-        else:
-            return self.buildnumber
+        return self.buildnumber
 
     def get_status(self):
         return self.status

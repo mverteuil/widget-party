@@ -1,39 +1,23 @@
 /*global Dashboard, $*/
-Dashboard.widgets.BuildStatus = function (dashboard) {
-    var self = this,
-        widget;
-    this.__init__ = function () {
-        var html = $('#templates').find('.widget-buildstatus').clone();
-        html.css('background-color', self.success_color);
-        widget = dashboard.grid.add_widget(
-            html,
-            self.col,
-            self.row);
-    };
-    this.row = 1;
-    this.col = 1;
-    this.progress_color = '#460027';
-    this.success_color = '#25560F';
-    this.unstable_color = '#585201';
-    this.failure_color = '#C1042C';
-    this.render = function () {
-        widget.find('.buildnumber').html(self.data.buildnumber);
-        widget.find('.title').text(self.data.title);
-        widget.find('.updated-at').text(self.data.updated_at);
-        if (self.data.status < 0) {
-            widget.css('background-color', self.progress_color);
-        } else if (self.data.status == 0) {
-            widget.css('background-color', self.failure_color);
-        } else if (self.data.status == 1) {
-            widget.css('background-color', self.success_color);
-        } else if (self.data.status > 1) {
-            widget.css('background-color', self.unstable_color);
-        }
-    };
-    this.data = {};
-    this.getWidget = function () {
-        return widget;
-    };
-    this.getData = function () {};
-    this.interval = 1000;
+Dashing.widgets.BuildStatus = function(dashboard) {
+    var self = this, widget;
+    self.__init__ = Dashing.utils.widgetInit(dashboard, 'buildstatus');
+    self.row = 1;
+    self.col = 1;
+
+    self.scope = {};
+    self.getWidget = function () { return widget; };
+    self.getData = function () {};
+    self.interval = 1000;
+};
+
+rivets.binders.build_status = function(el, value) {
+    var state_colors = {
+        failure: '#C1042C';
+        progress: '#460027';
+        success: '#25560F';
+        unstable: '#585201';
+    }
+
+    el.style.setProperty('background-color', state_colors[value]);
 };
