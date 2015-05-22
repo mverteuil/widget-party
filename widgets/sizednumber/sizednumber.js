@@ -11,3 +11,7 @@ Dashing.widgets.SizedNumber = function(dashboard) {
     self.getData = function () {};
     self.interval = 1000;
 };
+
+rivets.binders['style-*'] = function(el, value) {
+    el.style.setProperty(this.arg1, value);
+};
