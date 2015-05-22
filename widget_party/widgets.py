@@ -23,7 +23,7 @@ class BuildStatusWidget(Widget):
     def get_context(self):
         return {
             'title': self.get_title(),
-            'updated_at': self.get_updated_at(),
-            'buildnumber': self.get_buildnumber(),
+            'updatedAt': self.get_updated_at(),
+            'buildNumber': self.get_buildnumber(),
             'status': self.get_status(),
         }
