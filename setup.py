@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='widget-party',
-    version='1.3',
+    version='2.0',
     packages=['widget_party'],
     include_package_data=True,
     install_requires=['django-dashing>=0.2.6', 'Django>=1.6', ],
