@@ -1,16 +1,14 @@
-<li class="widget widget-list widget-linklist widget-commitlist">
-    <div>
-        <h1 class="title"></h1>
-        <ul class="commitlist">
-          <li class="commit">
-            <a href="#" class="url">
-              <div>
-                  <span class="sha"></span><span class="author"></span>
-              </div>
-              <div class="message"></div>
-            </a>
-          </li>
-        </ul>
-        <p class="updated-at"></p>
-    </div>
-</li>
+<div class='widget-commitlist'>
+    <h1>{ title }</h1>
+    <ul>
+      <li rv-each-item="data">
+        <a href="{ item.url }">
+            <div>
+                <span class="sha">{ item.sha }</span> <span class="author">{ item.author }</span>
+            </div>
+            <div class="message">{ item.message }</span>
+      </li>
+    </ul>
+    <p class="more-info" rv-if="moreInfo">{ moreInfo }</p>
+    <p class="updated-at" rv-if="updatedAt">{ updatedAt }</p>
+</div>

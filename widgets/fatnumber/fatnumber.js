@@ -1,29 +1,13 @@
-/*global Dashboard, $*/
-Dashboard.widgets.FatNumber = function (dashboard) {
-    var self = this,
-        widget;
-    this.__init__ = function () {
-        var html = $('#templates').find('.widget-fatnumber').clone();
-        html.css('background-color', self.color);
-        widget = dashboard.grid.add_widget(
-            html,
-            self.col,
-            self.row);
-    };
-    this.row = 2;
-    this.col = 2;
-    this.color = '#96bf48';
-    this.render = function () {
-        widget.find('.value').html(self.data.value);
-        widget.find('.title').text(self.data.title);
-        widget.find('.change-rate').text(self.data.change_rate);
-        widget.find('.more-info').text(self.data.more_info);
-        widget.find('.updated-at').text(self.data.updated_at);
-    };
-    this.data = {};
-    this.getWidget = function () {
-        return widget;
-    };
-    this.getData = function () {};
-    this.interval = 1000;
+/* global Dashing */
+
+Dashing.widgets.FatNumber = function(dashboard) {
+    var self = this, widget;
+    self.__init__ = Dashing.utils.widgetInit(dashboard, 'fatnumber');
+    self.row = 2;
+    self.col = 2;
+    self.color = '#96bf48';
+    self.scope = {};
+    self.getWidget = function () { return widget; };
+    self.getData = function () {};
+    self.interval = 1000;
 };
