@@ -6,7 +6,7 @@ class BuildStatusWidget(Widget):
     title = ''
     updated_at = ''
     buildnumber = 0
-    status = 'progress'
+    buildstatus = 'progress'
 
     def get_title(self):
         return self.title
@@ -17,13 +17,13 @@ class BuildStatusWidget(Widget):
     def get_buildnumber(self):
         return self.buildnumber
 
-    def get_status(self):
-        return self.status
+    def get_buildstatus(self):
+        return self.buildstatus
 
     def get_context(self):
         return {
             'title': self.get_title(),
             'updatedAt': self.get_updated_at(),
             'buildNumber': self.get_buildnumber(),
-            'status': self.get_status(),
+            'buildStatus': self.get_buildstatus(),
         }
