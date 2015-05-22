@@ -1,15 +1,10 @@
-<li class="widget widget-list widget-linklist">
-    <div>
-        <h1 class="title"></h1>
-        <ul>
-          <li>
-            <a href="#" class="link">
-              <span class="sha"></span>
-              <span class="commit-message"></span>
-              <span class="author"></span>
-            </a>
-          </li>
-        </ul>
-        <p class="updated-at"></p>
-    </div>
-</li>
+<div>
+    <h1>{ title }</h1>
+    <ul>
+      <li rv-each-item="data">
+          <a href="{ item.url }"><span class="message">{ item.message }</span></a>
+      </li>
+    </ul>
+    <p class="more-info" rv-if="moreInfo">{ moreInfo }</p>
+    <p class="updated-at" rv-if="updatedAt">{ updatedAt }</p>
+</div>
