@@ -13,10 +13,10 @@ Dashing.widgets.BuildStatus = function(dashboard) {
 
 rivets.binders.build_status = function(el, value) {
     var state_colors = {
-        failure: '#C1042C';
-        progress: '#460027';
-        success: '#25560F';
-        unstable: '#585201';
+        failure: '#C1042C',
+        progress: '#460027',
+        success: '#25560F',
+        unstable: '#585201'
     }
 
     el.style.setProperty('background-color', state_colors[value]);
