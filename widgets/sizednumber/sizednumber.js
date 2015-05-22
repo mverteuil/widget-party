@@ -13,5 +13,5 @@ Dashing.widgets.SizedNumber = function(dashboard) {
 };
 
 rivets.binders['style-*'] = function(el, value) {
-    el.style.setProperty(this.arg1, value);
+    el.style.setProperty(this.args[0], value);
 };
