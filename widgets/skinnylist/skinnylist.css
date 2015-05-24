@@ -1,4 +1,4 @@
-.widget-fatlist span.label {
+.widget-skinnylist span.label {
   float: left;
   clear: left;
   color: #fff;
@@ -6,7 +6,7 @@
   font-size: large;
 }
 
-.widget-fatlist span.value {
+.widget-skinnylist span.value {
   float: left;
   clear: left;
   margin-left: 30px;

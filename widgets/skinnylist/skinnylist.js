@@ -1,8 +1,8 @@
 /* global Dashing */
 
-Dashing.widgets.FatList = function (dashboard) {
+Dashing.widgets.SkinnyList = function (dashboard) {
     var self = this, widget;
-    self.__init__ = Dashing.utils.widgetInit(dashboard, 'fatlist');
+    self.__init__ = Dashing.utils.widgetInit(dashboard, 'skinnylist');
     self.row = 2;
     self.col = 2;
     self.scope = {};
