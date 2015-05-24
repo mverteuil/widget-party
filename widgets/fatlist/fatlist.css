@@ -1,0 +1,17 @@
+.widget-fatlist span.label {
+  float: left;
+  clear: left;
+  color: #fff;
+  font-weight: 200;
+  font-size: large;
+}
+
+.widget-fatlist span.value {
+  float: left;
+  clear: left;
+  margin-left: 30px;
+  margin-top: -12px;
+  color: #fff;
+  font-weight: 900;
+  font-size: x-large;
+}
