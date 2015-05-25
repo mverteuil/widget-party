@@ -2,7 +2,9 @@
 widget-party
 ============
 
-A Django-Dashing Widget Pack
+A django-dashing_ widget pack
+
+.. _django-dashing: https://github.com/talpor/django-dashing/
 
 Quick start
 -----------
