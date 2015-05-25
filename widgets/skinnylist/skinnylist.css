@@ -1,17 +1,30 @@
+.widget-skinnylist, .widget-skinnylist ul li {
+    background-color: #BA5500;
+}
+
+.widget-skinnylist h1 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .widget-skinnylist span.label {
-  float: left;
-  clear: left;
-  color: #fff;
-  font-weight: 200;
-  font-size: large;
+    float: left;
+    clear: left;
+    color: #fff;
+    font-weight: 200;
+    font-size: large;
 }
 
 .widget-skinnylist span.value {
-  float: left;
-  clear: left;
-  margin-left: 30px;
-  margin-top: -12px;
-  color: #fff;
-  font-weight: 900;
-  font-size: x-large;
+    float: left;
+    clear: left;
+    margin-left: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.widget-skinnylist li {
+    float:left;
+    clear:left;
+    margin-bottom: 5px;
 }
