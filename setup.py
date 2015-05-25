@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
@@ -10,10 +10,11 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='widget-party',
     version='2.2.1',
-    packages=['widget_party'],
+    packages=find_packages('widget_party'),
     include_package_data=True,
     install_requires=['django-dashing>=0.2.6', 'Django>=1.6', ],
-    license='MIT License',  # example license
+    setup_requires=["setuptools_git >= 0.3"],
+    license='MIT License',
     description='A collection of widgets to add functionality to django-dashing.',
     long_description=README,
     url='https://github.com/mverteuil/widget-party',
