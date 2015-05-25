@@ -1,0 +1,17 @@
+.widget-fatlist span.label {
+    float: left;
+    text-align: right;
+    width: 49%;
+    font-size: 110%;
+}
+
+.widget-fatlist span.label::after {
+    content: " \2022"
+}
+
+.widget-fatlist span.value {
+    float: right;
+    color: #fff;
+    font-size: 110%;
+    width: 50%;
+}
