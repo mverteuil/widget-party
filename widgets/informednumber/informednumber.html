@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <td class="title" colspan="2">{ title }</td>
+    </tr>
+    <tr>
+        <td class="value">{ value }</td>
+        <td class="extra-column" rv-if="extra">
+            <table>
+                <tr class="extra-row" rv-each-item="extra">
+                    <td class="extra-label">{ item.label }</td>
+                    <td class="extra-value">{ item.value }</td>
+                </tr>
+            </table>
+        </td>
+    <tr>
+        <td class="updated-at" rv-if="updatedAt">{ updatedAt }</td>
+    </tr>
+</table>
