@@ -2,7 +2,7 @@
     <h1>{ title }</h1>
     <ul>
       <li rv-each-item="data">
-          <a href="{ item.url }"><span class="message">{ item.message }</span></a>
+          <a rv-href="item.url">{ item.message }</a>
       </li>
     </ul>
     <p class="more-info" rv-if="moreInfo">{ moreInfo }</p>
