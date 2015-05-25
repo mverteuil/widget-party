@@ -1,3 +1,7 @@
+.widget-linklist, .widget-linklist ul li {
+    background-color: rgb(126, 72, 128);
+}
+
 .widget-linklist li {
     text-align: center;
     padding-bottom: 5pt;

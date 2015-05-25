@@ -1,25 +1,26 @@
-.widget-fatnumber {
-    background-color: #96bf48;
+.widget-sizednumber {
+    background-color: rgb(30, 205, 159);
 }
 
-.widget-fatnumber h1 {
+.widget-sizednumber h1 {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.widget-fatnumber h2 {
+.widget-sizednumber h2 {
     color: #fff;
+    font-family: sans-serif;
 }
 
-.widget-fatnumber .detail {
+.widget-sizednumber .detail {
     font-weight: 500;
     font-size: 30px;
     color: #fff;
 }
 
-.widget-fatnumber .more-info {
+.widget-sizednumber .more-info {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.widget-fatnumber .updated-at {
+.widget-sizednumber .updated-at {
     color: rgba(0, 0, 0, 0.3);
 }

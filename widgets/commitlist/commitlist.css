@@ -1,16 +1,14 @@
-.widget-commitlist>div { 
-    background-color: #12b0c5;
+.widget-commitlist { 
+    background-color: #860000;
 }
 
 .widget-commitlist .title { 
-    f
     color: rgba(255, 255, 255, 0.7);
 }
 
 .widget-commitlist ol, ul {
     margin: 0 15px;
     text-align: left;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .widget-commitlist ol {
@@ -19,7 +17,8 @@
 
 .widget-commitlist li {
     font-size: 12px;
-    border-top: 1px solid #00AAAA;
+    border-top: 1px solid #FF0000;
+    background-color: #860000;
     padding-top: 6px;
     margin-bottom: 6px;
 }
@@ -30,14 +29,15 @@
 
 .widget-commitlist .author {
     float: right;
-    color: rgba(0, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
     font-weight: 600;
 }
 
 .widget-commitlist a .sha {
     float: left;
     text-transform: uppercase;
-    color: rgba(0, 255, 255, 0.7);
+    color: rgba(255, 0, 0, 0.7);
+    font-weight: 900;
 }
 
 .widget-commitlist .message {
