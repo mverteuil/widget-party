@@ -2,8 +2,8 @@
     <h1>{ title }</h1>
     <ul>
       <li rv-each-item="data">
-        <span class="label">{ item.label }</span>
-        <span class="value">{ item.value }</span>
+        <span class="label" rv-class-fat="fatLabel">{ item.label }</span>
+        <span class="value" rv-class-fat="fatValue">{ item.value }</span>
       </li>
     </ul>
     <p class="more-info" rv-if="moreInfo">{ moreInfo }</p>

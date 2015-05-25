@@ -1,8 +1,13 @@
 .widget-fatlist span.label {
     float: left;
-    text-align: right;
-    width: 49%;
     font-size: 110%;
+    padding-right: 2pt;
+    text-align: right;
+    width: 46%;
+}
+
+.widget-fatlist span.label.fat, .widget-fatlist span.value.fat {
+    width: 52%;
 }
 
 .widget-fatlist span.label::after {
@@ -10,10 +15,10 @@
 }
 
 .widget-fatlist span.value {
-    float: left;
     color: #fff;
+    float: left;
     font-size: 110%;
     padding-left: 2pt;
     padding-right 2pt;
-    width: 50%;
+    width: 46%;
 }
