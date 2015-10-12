@@ -9,6 +9,10 @@ A django-dashing_ widget pack
 Quick start
 -----------
 
+#. Install the latest stable version from PyPi:
+
+    $ pip install widget_party
+
 #. Add "widget_party" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = (
