@@ -15,10 +15,10 @@ Dashing.widgets.BuilderList = function(dashboard) {
 rivets.binders.color = function(el, value) {
     // Update the builder color based on state.
     var state_colors = {
-        failed: '#EB4720',
-        progress: '#2A99FF',
-        success: '#68DE3A',
-        unstable: 'yellow'
+        failed: '#EB4720', // orange-red
+        progress: '#2A99FF', // dark-blue
+        success: '#68DE3A', // green
+        unstable: '#FFFF00', // yellow
     };
 
     el.style.setProperty('color', state_colors[value]);
@@ -26,7 +26,9 @@ rivets.binders.color = function(el, value) {
 
 
 rivets.binders.fontsize = function(builderWidgetDiv, buildersList) {
-    var maxListItems = 13; // more than 13 items, start to shrink font
+    // Recalculates the `font-size` CSS attrib if the number of items
+    // in the BuilderListWidget gets too large.
+    var maxListItems = 13;
     if (buildersList.length > maxListItems) {
         var defaultFontSize = 25; //pixels
         var decrementBy = 3; //px
