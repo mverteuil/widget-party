@@ -1,0 +1,12 @@
+.failed {
+    color: #FF0000;  /* red */
+}
+.progress {
+    color: #2A99FF;  /* dark-blue */
+}
+.success {
+    color: #68DE3A;  /* green */
+}
+.unstable {
+    color: #FFFF00;  /* yellow */
+}

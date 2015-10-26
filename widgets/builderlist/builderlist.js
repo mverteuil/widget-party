@@ -13,15 +13,9 @@ Dashing.widgets.BuilderList = function(dashboard) {
 
 
 rivets.binders.color = function(el, value) {
-    // Update the builder color based on state.
-    var state_colors = {
-        failed: '#EB4720', // orange-red
-        progress: '#2A99FF', // dark-blue
-        success: '#68DE3A', // green
-        unstable: '#FFFF00', // yellow
-    };
-
-    el.style.setProperty('color', state_colors[value]);
+    // add the builder state onto the element as a class. The injected element
+    // is the span.value and its inner-text contains the state of the builder.
+    el.className = 'value ' + value;
 };
 
 
