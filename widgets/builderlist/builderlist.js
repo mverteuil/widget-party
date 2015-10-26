@@ -13,8 +13,9 @@ Dashing.widgets.BuilderList = function(dashboard) {
 
 
 rivets.binders.color = function(el, value) {
-    // add the builder state onto the element as a class.
-    el.className += ' ' + value;
+    // add the builder state onto the element as a class. The injected element
+    // is the span.value and its inner-text contains the state of the builder.
+    el.className = 'value ' + value;
 };
 
 
